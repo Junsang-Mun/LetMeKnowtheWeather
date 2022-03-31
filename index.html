@@ -4,17 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./index.css">
     <script type="text/javascript" src="./main.js"></script>
-    <title>Let Me Know the Weater</title>
+    <title>Weather</title>
 </head>
 <body>
     <div class="background">
         <div class="padding"></div>
-        <form action="/action_page.php">
-            <input type="text" placeholder="주소를 여기에 검색하세요" id="searchBox">
-            <button type="submit" id="searchButton"><img src="./svgs/search.svg" id="searchButtonImage"></button>
-        </form>      
+        <input list="locationDatalist" id="locationSearch" name="locationSearch">
+        <datalist id="locationDatalist">
+            <option value="강원도">
+            <option value="경기도">
+            <option value="경상남도">
+            <option value="경상북도">
+            <option value="광주광역시">
+            <option value="대구광역시">
+            <option value="대전광역시">
+            <option value="부산광역시">
+            <option value="서울특별시">
+            <option value="세종특별자치시">
+            <option value="울산광역시">
+            <option value="인천광역시">
+            <option value="전라남도">
+            <option value="전라북도">
+            <option value="제주특별자치도">
+            <option value="충청남도">
+            <option value="충청북도">
+        </datalist>
+        <input type="button" value="날씨 검색" id="aoeriharjnberal">
+
         <div class="padding"></div>
         <div class="location">
             <h3 id="nowLocated">현재 위치: ㅁㄴㅇㄹ</h3>
