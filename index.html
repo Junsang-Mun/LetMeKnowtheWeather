@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <script type="text/javascript" src="./main.js"></script>
     <title>Let Me Know the Weater</title>
 </head>
 <body>
     <div class="background">
         <div class="padding"></div>
-        <div class="searchbox"></div>
+        <form action="/action_page.php">
+            <input type="text" placeholder="주소를 여기에 검색하세요" id="searchBox">
+            <button type="submit" id="searchButton"><img src="./svgs/search.svg" id="searchButtonImage"></button>
+        </form>      
         <div class="padding"></div>
         <div class="location">
             <h3 id="nowLocated">현재 위치: ㅁㄴㅇㄹ</h3>
@@ -26,7 +31,7 @@
             </tr>
         </table>
         <div class="weather">
-            <img src="./svgs/sun.svg"
+            <img src="./svgs/sun.svg"/>
         </div>
     </div>
 </body>
